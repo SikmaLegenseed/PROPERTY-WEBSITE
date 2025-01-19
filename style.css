@@ -18,6 +18,7 @@ nav {
     background-color: white;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 nav img {
@@ -25,7 +26,7 @@ nav img {
 }
 
 .img-main img{
-    filter: blur(2px);
+    background-blend-mode: darken;
 }
 
 .img-main .text{
@@ -37,11 +38,14 @@ nav img {
     font-size: 2.5rem;
     font-weight: bold;
     border-radius: 5px;
+    text-align: center;
+    animation-name: animation-up-text;
+    animation-duration: 2s;
 }
 
 .img-main button{
     position: absolute;
-    top: 65%; 
+    top: 75%; 
     left: 50%; 
     transform: translate(-50%, -50%);
     color: white;
@@ -52,6 +56,9 @@ nav img {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    z-index: 2;
+    animation-name: animation-up-button;
+    animation-duration: 2s;
 }
 
 ul {
@@ -63,4 +70,33 @@ ul {
 
 li {
     cursor: pointer;
+}
+
+.content {
+    display: flex; 
+    align-items: center; 
+}
+  
+.content img {
+    width: 606px; 
+    height: 544px;
+    margin: 80px 75px 90px 120px;
+}
+  
+.text {
+    margin: 0 60px 0 0;
+}
+
+/* animation */
+@keyframes animation-up-text{
+    0%{
+        top: 500px;
+    }
+
+}
+
+@keyframes animation-up-button{
+    0%{
+        top: 600px;
+    }
 }
