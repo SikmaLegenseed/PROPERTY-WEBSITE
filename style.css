@@ -106,3 +106,20 @@ li {
         top: 600px;
     }
 }
+
+/* Hover */
+.img-main button:hover{
+    background-color: white;
+    color: #2E994D;
+    border: 1px solid #2E994D;
+    transition: 0.3s;
+}
+
+.img-main button:active{
+    background-color: #2E994D;
+    color: white;
+}
+
+.img-main button:not(:hover){
+    transition: 0.3s;
+}
