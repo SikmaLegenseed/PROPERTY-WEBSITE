@@ -80,11 +80,17 @@ li {
 .content img {
     width: 606px; 
     height: 544px;
-    margin: 80px 75px 90px 120px;
+    margin: 80px 75px 90px 100px;
 }
   
 .text {
     margin: 0 60px 0 0;
+    font-size: 48px;
+}
+
+.text-content {
+    margin: 20px 60px 0 0;
+    font-size: 24px;
 }
 
 /* animation */
