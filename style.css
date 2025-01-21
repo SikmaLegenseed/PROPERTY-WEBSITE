@@ -1,3 +1,4 @@
+/* General Reset and Styling */
 * {
     margin: 0;
     padding: 0;
@@ -25,11 +26,11 @@ nav img {
     height: 40px;
 }
 
-.img-main img{
+.img-main img {
     background-blend-mode: darken;
 }
 
-.img-main .text{
+.img-main .text {
     position: absolute;
     top: 50%; 
     left: 50%; 
@@ -39,11 +40,10 @@ nav img {
     font-weight: bold;
     border-radius: 5px;
     text-align: center;
-    animation-name: animation-up-text;
-    animation-duration: 2s;
+    animation: animation-up-text 2s;
 }
 
-.img-main button{
+.img-main button {
     position: absolute;
     top: 75%; 
     left: 50%; 
@@ -57,8 +57,7 @@ nav img {
     padding: 10px 20px;
     cursor: pointer;
     z-index: 2;
-    animation-name: animation-up-button;
-    animation-duration: 2s;
+    animation: animation-up-button 2s;
 }
 
 ul {
@@ -81,6 +80,9 @@ li {
     width: 606px; 
     height: 544px;
     margin: 80px 75px 90px 100px;
+    opacity: 0; /* Initial state */
+    transform: translateY(50px); /* Start below its final position */
+    transition: all 0.6s ease-in-out; /* Smooth transition */
 }
   
 .text {
@@ -93,33 +95,42 @@ li {
     font-size: 24px;
 }
 
-/* animation */
-@keyframes animation-up-text{
-    0%{
+/* Keyframe Animations */
+@keyframes animation-up-text {
+    0% {
         top: 500px;
+        opacity: 0;
     }
-
+    100% {
+        top: 50%;
+        opacity: 1;
+    }
 }
 
-@keyframes animation-up-button{
-    0%{
+@keyframes animation-up-button {
+    0% {
         top: 600px;
+        opacity: 0;
+    }
+    100% {
+        top: 75%;
+        opacity: 1;
     }
 }
 
-/* Hover */
-.img-main button:hover{
+/* Hover Effects */
+.img-main button:hover {
     background-color: white;
     color: #2E994D;
     border: 1px solid #2E994D;
     transition: 0.3s;
 }
 
-.img-main button:active{
+.img-main button:active {
     background-color: #2E994D;
     color: white;
 }
 
-.img-main button:not(:hover){
+.img-main button:not(:hover) {
     transition: 0.3s;
 }
