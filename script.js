@@ -10,6 +10,8 @@ button.addEventListener('click', function() {
     content.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
   });
 
+//for animation image
+
 document.addEventListener("DOMContentLoaded", () => {
   const contentImage = document.querySelector('.content img');
 
@@ -23,4 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
     observer.observe(contentImage);
-});
+  });
+
+

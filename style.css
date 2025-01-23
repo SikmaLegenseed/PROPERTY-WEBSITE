@@ -79,7 +79,7 @@ li {
 .content img {
     width: 606px; 
     height: 544px;
-    margin: 80px 75px 90px 100px;
+    margin: 100px 75px 90px 100px;
     opacity: 0; /* Initial state */
     transform: translateY(50px); /* Start below its final position */
     transition: all 0.6s ease-in-out; /* Smooth transition */
