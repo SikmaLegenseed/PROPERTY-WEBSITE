@@ -10,6 +10,13 @@ body {
     min-height: 100vh;
 }
 
+hr{
+    border: none;
+    border-top: 1px solid #ccc;
+    width: 90%;
+    margin: 0 auto;
+}
+
 nav {
     display: flex;
     justify-content: space-between; 
@@ -96,11 +103,11 @@ li {
 }
 
 .list-house {
-    /* display: flex; */
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    margin: 50px 0 0 75px;
+    margin: 50px 0 0 0px;
 }
 
 .card {
@@ -112,12 +119,29 @@ li {
     cursor: pointer;
     transition: transform 0.3s ease;
     position: relative;
-    margin: 20px;
+    margin: 20px 0 20px 0;
+}
+
+.card img{
+    margin: 10px 10px 10px 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 footer p{
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
+}
+
+footer img{
+    height: auto;
+    margin: 0 0 20px 0;
+    cursor: pointer;
 }
 
 /* Keyframe Animations */
@@ -157,5 +181,15 @@ footer p{
 }
 
 .img-main button:not(:hover) {
+    transition: 0.3s;
+}
+
+footer img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+footer img:not(:hover){
+    transform: scale(1);
     transition: 0.3s;
 }
