@@ -240,6 +240,8 @@ footer img:not(:hover) {
     .list-house {
         flex-direction: column;
         gap: 15px;
+        justify-content: center;
+        align-items: center;
     }
 
     .card {
