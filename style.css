@@ -254,6 +254,10 @@ footer img:not(:hover) {
         height: auto;
     }
 
+    .card-text {
+        padding: 15px;
+    }
+
     footer {
         padding: 15px;
     }
@@ -317,6 +321,12 @@ footer img:not(:hover) {
         height: auto;
     }
 
+    .card-text p{
+        font-size: 1rem;
+        padding: 20px;
+        /* margin: 10px 5px 10px 5px; */
+    }
+
     footer {
         padding: 20px;
     }
@@ -371,6 +381,18 @@ footer img:not(:hover) {
 
     .text-content {
         font-size: 1.2rem;
+    }
+
+    .card {
+        width: 60%;
+    }
+
+    .card-text {
+        padding: 20px;
+    }
+
+    .card-text h3 {
+        margin-bottom: 20px;
     }
 }
 
