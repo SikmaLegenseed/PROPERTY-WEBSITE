@@ -258,6 +258,10 @@ footer img:not(:hover) {
         padding: 15px;
     }
 
+    .card-text h3 {
+        margin-bottom: 10px;
+    }
+
     footer {
         padding: 15px;
     }
