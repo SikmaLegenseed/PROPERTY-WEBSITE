@@ -56,7 +56,7 @@
     </div>
 
     <footer>
-        <p>Copyright &copy; 2025 | Agung Surya</p>
+        <p>Copyright &copy; <?php echo date('Y');?> | Agung Surya</p>
         <p>Made with ❤️ in Indonesia</p>
         <a href="https://github.com/SikmaLegenseed" target="_blank"><img src="img/github-icon.png" alt="github" width="40px" height="40px"></a>
     </footer>
