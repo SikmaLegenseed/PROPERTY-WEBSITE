@@ -32,20 +32,27 @@ if ($jam >= 3 && $jam <= 11) {
     <h1>Halaman Login</h1>
     <h2><?= $salam;?></h2>
 
-    <form action="proses_login_dekripsi.php" method="post">
-        <ul>
-            <li>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username">
-            </li>
-            <li>
-                <label for="password">Password:</label>
-                <input type="password" placeholder="Password" name="password" required>
-            </li>
-            <li>
-                <button type="submit">Login</button>
-            </li>
-        </ul>
+    <form action="proses_login_dekripsi.php" method="POST">
+        <div class="wrapper">
+            <form action="">
+                <ul>
+                    <li>
+                        <label for="username">Username:</label>
+                        <input type="text" placeholder="Username" name="username" required>
+                    </li>
+                    <li>
+                        <label for="password">Password:</label>
+                        <input type="password" placeholder="Password" name="password" required>
+                    </li>
+                    <li>
+                        <button type="submit" class="btn">Login</button>
+                    </li>
+                    <li>
+                        <button><a href="registrasi.php">Registrasi</a></button>
+                    </li>
+                </ul>
+            </form>
+        </div>
     </form>
 </body>
 </html>
