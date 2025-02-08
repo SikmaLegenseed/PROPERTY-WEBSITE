@@ -40,7 +40,7 @@ if (!@$_SESSION["username"]){
 
     <div class="container">
         <div class="img-main">
-            <img class="z-[-1] object-cover object-center absolute left-0 top-0 w-full h-full" src="../img/rumah-2.jpg" width="100%" height="540px" alt="Outdoor Lamps">
+            <img class="z-[-1] object-cover object-center absolute left-0 top-0 w-full h-full" src="../img/rumah-2.jpg" width="100%" height="646px" alt="Outdoor Lamps">
             <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quis ea, quia neque voluptates rerum placeat voluptas voluptate molestias porro.</div>
             <button class="rounded-full px-4 py-2 shadow bg-green-600 hover:bg-white hover:text-green-600">Read More</button>
         </div>
