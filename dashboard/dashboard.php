@@ -1,6 +1,7 @@
 <?php
 session_start();
 include "../view/conn.php";
+include "../component/navbar.php";
 
 //klo blm login harus login
 if (!@$_SESSION["username"]){
@@ -20,36 +21,19 @@ if (!@$_SESSION["username"]){
     
 </head>
 <body>
-    <nav>
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
-        <ul>
-            <li>Home</li>
-            <li>Contact</li>
-            <li>
-                <div class="username-hover" onclick="toggleDropdown()">
-                    <?= $_SESSION['username'] ?> ▼
-                    <div class="dropdown-content">
-                        <p>Level: <b><?= $_SESSION['level'] ?></b></p>
-                        <hr>
-                        <a href="../view/logout.php" class="logout-btn">Logout</a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </nav>
 
     <div class="container">
         <div class="img-main">
-            <img class="z-[-1] object-cover object-center absolute left-0 top-0 w-full h-full" src="../img/rumah-2.jpg" width="100%" height="646px" alt="Outdoor Lamps">
+            <img class="z-[-1] object-cover object-center absolute left-0 top-0 w-full h-full" src="../img/rumah-2.jpg" width="100%" height="700px" alt="Outdoor Lamps">
             <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quis ea, quia neque voluptates rerum placeat voluptas voluptate molestias porro.</div>
-            <button class="rounded-full px-4 py-2 shadow bg-green-600 hover:bg-white hover:text-green-600">Read More</button>
+            <button onclick="document.querySelector('.content').scrollIntoView({ behavior: 'smooth', block: 'start' })" class="rounded-full px-4 py-2 shadow bg-green-600 hover:bg-white hover:text-green-600">Read More</button>
         </div>
         
     </div>
     
-    <div class="content">
+    <div class="content" style="display: flex;">
         <div style="width: 50%;">
-            <img src="../img/rumah.jpg" alt="content house" width="606px" height="544px">
+            <img src="../img/rumah.jpg" alt="content house" width="588px" height="520px">
         </div>
         <div style="width: 50%;">
             <h2 class="text" style="text-align: center; margin-bottom: 20px;">We are Real Estate Investors</h2>
@@ -61,7 +45,7 @@ if (!@$_SESSION["username"]){
         <div class="card">
             <img src="../img/rumah.jpg" alt="content house" width="350px" height="350px">
             <div class="card-text">
-                <h3>House 1</h3>
+                <h3>Sewa Rumah</h3>
                 <p class="card-text-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quis ea, quia neque voluptates rerum placeat voluptas voluptate molestias porro.</p>
                 <button>Read More</button>
             </div>
@@ -69,7 +53,7 @@ if (!@$_SESSION["username"]){
         <div class="card">
             <img src="../img/rumah.jpg" alt="content house" width="350px" height="350px">
             <div class="card-text">
-                <h3>House 1</h3>
+                <h3>Jual Villa</h3>
                 <p class="card-text-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quis ea, quia neque voluptates rerum placeat voluptas voluptate molestias porro.</p>
                 <button>Read More</button>
             </div>
