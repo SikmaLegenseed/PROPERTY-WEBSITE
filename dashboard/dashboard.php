@@ -1,7 +1,12 @@
 <?php
 session_start();
 include "../view/conn.php";
-include "../component/navbar.php";
+
+if (isset($_GET['page'])) {
+    include '../component/navbar.php';
+} else {
+    echo "<h1>Selamat Datang di Dashboard</h1>";
+}
 
 //klo blm login harus login
 if (!@$_SESSION["username"]){
@@ -45,9 +50,9 @@ if (!@$_SESSION["username"]){
         <div class="card">
             <img src="../img/rumah.jpg" alt="content house" width="350px" height="350px">
             <div class="card-text">
-                <h3>Sewa Rumah</h3>
+                <h3>Jual Rumah</h3>
                 <p class="card-text-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quis ea, quia neque voluptates rerum placeat voluptas voluptate molestias porro.</p>
-                <button>Read More</button>
+                <a href="navbar.php?page=rumah"><button>Read More</button></a>
             </div>
         </div>
         <div class="card">
